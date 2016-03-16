@@ -1,0 +1,173 @@
+body {
+  background-color: brown;
+  background-image: url(../../img/bg.png);
+}
+
+#head {
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(220, 229, 183, 0.43);
+  background-image: url(../../img/checker.png);
+  margin-bottom: 10px;
+}
+
+#head h1 {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 30px;
+  font-size: 4em;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-family: cursive;
+}
+
+#logo {
+  background-color: #fceddd;
+  background-image: url(../../img/bg.png);
+  padding: 5px 30px;
+  border-radius: 20px;
+  width: 288px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mainContainer {
+  width: 80%;
+  margin: auto;
+}
+
+#mainContainer #container nav {
+  width: 32%;
+  float: left;
+  /* Arrow at the end of nav bg */
+}
+
+#mainContainer #container nav a {
+  text-decoration: none;
+  color: #ffe2c0;
+}
+
+#mainContainer #container nav li {
+  list-style: none;
+  margin-top: 12px;
+  margin-left: -30px;
+  margin-right: 50px;
+  padding: 15px 5px;
+  padding-left: 15px;
+  position: relative;
+  background: #8e020d;
+  border: 4px solid #620209;
+  border-radius: 6.5px;
+}
+
+#mainContainer #container nav li:hover {
+  background-color: #620209;
+  border-color: #8e020d;
+  transition: border-color 0.8s, background-color 0.8s;
+}
+
+#mainContainer #container nav li:hover:after {
+  border-left-color: #620209;
+  transition: border-left-color 0.8s;
+}
+
+#mainContainer #container nav li:hover:before {
+  border-left-color: #8e020d;
+  transition: border-left-color 0.8s;
+}
+
+#mainContainer #container nav li:after, #mainContainer #container nav li:before {
+  left: 100%;
+  top: 50%;
+  border: 3px solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#mainContainer #container nav li:after {
+  border-color: transparent;
+  border-left-color: #8e020d;
+  border-width: 23px;
+  margin-top: -23px;
+}
+
+#mainContainer #container nav li:before {
+  border-color: transparent;
+  border-left-color: #620209;
+  border-width: 29px;
+  margin-top: -29px;
+}
+
+#mainContainer #container img {
+  width: 36%;
+  border-radius: 5px;
+}
+
+#mainContainer #container #musicPlayer {
+  width: 28%;
+  float: right;
+  height: 280px;
+  background-color: #8e020d;
+  border: 4px solid #620209;
+  border-radius: 15px;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-right: 15px;
+}
+
+#mainContainer #container #musicPlayer a {
+  background-color: bisque;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#mainContainer #container #musicPlayer img {
+  width: 15px;
+  display: inline-block;
+}
+
+#mainContainer #container #musicPlayer p {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+#mainContainer #container #text {
+  clear: both;
+  width: 80%;
+  margin: auto;
+  background-color: bisque;
+  padding: 10px 40px;
+  border: 8px outset #f5bc79;
+  border-radius: 15px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+}
+
+#mainContainer #container #text h2 {
+  padding-top: 75px;
+  text-align: center;
+  font-size: 2em;
+}
+
+#mainContainer #container #text p {
+  padding-top: 75px;
+}
+
+#sidebar1 > div > p {
+    display: none;
+}
+
+/** CALENDAR STYLING **/
+.calendar-head{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ecwd_calendar_container tbody tr td:last-child div{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
